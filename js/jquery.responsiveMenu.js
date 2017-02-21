@@ -8,8 +8,8 @@
  *
  */
 (function ($) {
-            var active;
-			var margin = 0;
+	        var active;
+		var margin = 0;
 		var Carousel = {
 			// инициализация плагина
 			init:function( options, el ) {
