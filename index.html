@@ -37,17 +37,17 @@
 </section>
 <script>
     $(document).ready(function () {
-        var owl = $('#slider');
-        owl.carouselMenu({
+        var slider = $('#slider');
+        slider.carouselMenu({
             "background": "blue"
         });
         $('.cont-slider-next').click(function () {
-            //
-            owl.trigger('next');
+            //вешаем обработчик прокрутки меню вперед
+            slider.trigger('next');
         });
         $('.cont-slider-prev').click(function () {
-            //
-            owl.trigger('prev');
+            //вешаем обработчик прокрутки меню назад
+            slider.trigger('prev');
         });
     });
 </script>
