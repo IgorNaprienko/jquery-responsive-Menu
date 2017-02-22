@@ -8,8 +8,8 @@
  *
  */
 (function ($) {
-            var active;
-			var margin = 0;
+	        var active;
+		var margin = 0;
 		var Carousel = {
 			// инициализация плагина
 			init:function( options, el ) {
@@ -20,14 +20,14 @@
 				base.$menu = $(el).find('.msl-menu');
 				base.$cont= $(el).find('.msl-container');
 				base.$elem.addClass('msl-carousel');
-                base.$first = $(el).find('.msl-item:first-of-type');
+                                base.$first = $(el).find('.msl-item:first-of-type');
 				active =  base.$first;
 				
 				base.options = $.extend({}, $.fn.carouselMenu.options, base.$elem.data(), options);
 				base.userOptions = options;
 				
 				base.customEvents();
-		        base.load();
+		                base.load();
 			},
 			load:function(){
 				var base = this;
